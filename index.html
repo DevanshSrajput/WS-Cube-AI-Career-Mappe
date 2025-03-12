@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WsCube AI Career Mapper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/api/placeholder/150/50" alt="WsCube Logo" class="logo">
+            <h1>AI Career Mapper</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#career-paths">Career Paths</a></li>
+                <li><a href="#ai-consultation">AI Consultation</a></li>
+                <li><a href="#roadmaps">Learning Roadmaps</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="login-btn"><a href="login.html">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover Your Ideal Tech Career Path</h1>
+                <p>Our AI-powered career mapping tool helps undergraduate tech students find their perfect career match
+                    through personalized recommendations and interactive guidance.</p>
+                <div class="cta-buttons">
+                    <a href="#ai-consultation" class="primary-btn">Start AI Consultation</a>
+                    <a href="#career-paths" class="secondary-btn">Explore Career Paths</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/500/400" alt="Career Guidance Illustration">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>How Our AI Career Mapper Helps You</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Consultations</h3>
+                    <p>Live video consultations with our AI analyze your preferences, strengths, and goals to provide
+                        personalized career recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Learning Roadmaps</h3>
+                    <p>Get detailed, step-by-step learning paths for each career option, showing you exactly what skills
+                        and knowledge you need to develop.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Market Trends</h3>
+                    <p>Stay informed about the latest job market trends, demand forecasts, and salary expectations for
+                        different tech career paths.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Skill Assessment</h3>
+                    <p>Evaluate your current skills and identify gaps that need to be filled to succeed in your chosen
+                        career path.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-consultation" class="consultation">
+            <h2>Start Your AI Career Consultation</h2>
+            <div class="consultation-container">
+                <div class="consultation-video">
+                    <div class="video-placeholder">
+                        <i class="fas fa-video"></i>
+                        <p>AI Video Consultation</p>
+                        <button id="start-consultation" class="primary-btn">Start Consultation</button>
+                    </div>
+                </div>
+                <div class="consultation-chat" id="consultation-chat">
+                    <div class="chat-header">
+                        <h3>Career Advisor AI</h3>
+                    </div>
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message ai-message">
+                            <p>Hello! I'm your AI Career Advisor. I'll help you discover the perfect tech career path.
+                                Ready to get started?</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="user-input" placeholder="Type your response here...">
+                        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-paths" class="career-paths">
+            <h2>Explore Tech Career Paths</h2>
+            <div class="career-filters">
+                <button class="filter-btn active" data-filter="all">All Paths</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+                <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+            <div class="career-cards">
+                <div class="career-card" data-category="development">
+                    <div class="career-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>Build applications, websites, and software systems using various programming languages and
+                        frameworks.</p>
+                    <ul class="career-highlights">
+                        <li>Average Salary: $85,000 - $135,000</li>
+                        <li>Job Growth: 22% (2020-2030)</li>
+                        <li>Learning Curve: Moderate</li>
+                    </ul>
+                    <a href="#" class="career-details-btn" data-career="software-development">View Details</a>
+                </div>
+                <div class="career-card" data-category="data">
+                    <div class="career-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Analyze and interpret complex data to help organizations make better business decisions.</p>
+                    <ul class="career-highlights">
+                        <li>Average Salary: $75,000 - $115,000</li>
+                        <li>Job Growth: 25% (2020-2030)</li>
+                        <li>Learning Curve: Moderate</li>
+                    </ul>
+                    <a href="#" class="career-details-btn" data-career="data-analytics">View Details</a>
+                </div>
+                <div class="career-card" data-category="data ai-ml">
+                    <div class="career-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Combine statistics, mathematics, and programming to extract insights and knowledge from data.</p>
+                    <ul class="career-highlights">
+                        <li>Average Salary: $95,000 - $145,000</li>
+                        <li>Job Growth: 31% (2020-2030)</li>
+                        <li>Learning Curve: Steep</li>
+                    </ul>
+                    <a href="#" class="career-details-btn" data-career="data-science">View Details</a>
+                </div>
+                <div class="career-card" data-category="ai-ml">
+                    <div class="career-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning Engineer</h3>
+                    <p>Design and implement machine learning models to solve complex problems and automate tasks.</p>
+                    <ul class="career-highlights">
+                        <li>Average Salary: $110,000 - $150,000</li>
+                        <li>Job Growth: 35% (2020-2030)</li>
+                        <li>Learning Curve: Steep</li>
+                    </ul>
+                    <a href="#" class="career-details-btn" data-career="ml-engineer">View Details</a>
+                </div>
+                <div class="career-card" data-category="devops">
+                    <div class="career-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>DevOps Engineer</h3>
+                    <p>Bridge software development and IT operations to streamline deployment processes and improve
+                        system reliability.</p>
+                    <ul class="career-highlights">
+                        <li>Average Salary: $95,000 - $140,000</li>
+                        <li>Job Growth: 22% (2020-2030)</li>
+                        <li>Learning Curve: Moderate</li>
+                    </ul>
+                    <a href="#" class="career-details-btn" data-career="devops">View Details</a>
+                </div>
+                <div class="career-card" data-category="security">
+                    <div class="career-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Specialist</h3>
+                    <p>Protect organizations' systems, networks, and data from cyber threats and security breaches.</p>
+                    <ul class="career-highlights">
+                        <li>Average Salary: $90,000 - $135,000</li>
+                        <li>Job Growth: 33% (2020-2030)</li>
+                        <li>Learning Curve: Moderate to Steep</li>
+                    </ul>
+                    <a href="#" class="career-details-btn" data-career="cybersecurity">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmaps" class="roadmaps">
+            <h2>Learning Roadmaps</h2>
+            <p>Select a career path to view a detailed learning roadmap with recommended skills, courses, and resources.
+            </p>
+            <div class="roadmap-selector">
+                <select id="roadmap-select">
+                    <option value="">Select a Career Path</option>
+                    <option value="software-development">Software Development</option>
+                    <option value="data-analytics">Data Analytics</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="ml-engineer">Machine Learning Engineer</option>
+                    <option value="devops">DevOps Engineer</option>
+                    <option value="cybersecurity">Cybersecurity Specialist</option>
+                </select>
+            </div>
+            <div class="roadmap-container" id="roadmap-container">
+                <div class="roadmap-placeholder">
+                    <i class="fas fa-map-signs"></i>
+                    <p>Select a career path to view its learning roadmap</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>Success Stories</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The AI Career Mapper helped me discover my passion for data science. The personalized
+                            roadmap made learning manageable, and I landed my dream job within a year!"</p>
+                        <div class="testimonial-author">
+                            <img src="/api/placeholder/50/50" alt="User Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Data Scientist at Tech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"I was undecided between software development and DevOps. The AI consultation helped me
+                            understand my strengths and preferences, guiding me to the right choice for my career."</p>
+                        <div class="testimonial-author">
+                            <img src="/api/placeholder/50/50" alt="User Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Rahul Mehra</h4>
+                                <p>DevOps Engineer at CloudTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The market trend insights were incredibly valuable. I focused on skills that were in high
+                            demand, and it made my job search so much easier than my peers."</p>
+                        <div class="testimonial-author">
+                            <img src="/api/placeholder/50/50" alt="User Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Ananya Patel</h4>
+                                <p>ML Engineer at InnovateAI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prev-testimonial" class="carousel-control"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button id="next-testimonial" class="carousel-control"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Career Details Modal -->
+    <div id="career-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="career-detail-content"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/api/placeholder/120/40" alt="WsCube Logo" class="logo">
+                <p>Empowering tech careers through AI-driven guidance</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#career-paths">Career Paths</a></li>
+                    <li><a href="#ai-consultation">AI Consultation</a></li>
+                    <li><a href="#roadmaps">Learning Roadmaps</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> support@wscube-career.com</p>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 WsCube AI Career Mapper. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
