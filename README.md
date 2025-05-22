@@ -9,7 +9,10 @@ AI Career Mapper is a web-based application designed to provide AI-driven career
 - **Login/Register System**: Users can log in or register, and their login state is saved in local storage.
 - **User Interface Enhancements**: When a user logs in, the login/register button is replaced with an icon.
 
-## Project Structure
+## Demo
+https://github.com/user-attachments/assets/bd9f9d87-a169-4010-91ce-c8e1cccfaefb
+
+## Project Overview
 ```
 |-- index.html         # Main landing page with career exploration and AI consultation
 |-- login.html         # Login/Register page with animated transitions
